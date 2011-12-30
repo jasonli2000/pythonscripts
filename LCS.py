@@ -16,4 +16,4 @@ if __name__ == '__main__':
     output = LongestCommonSubstring("^PRCA(430.2,0)=\"ACCOUNTS RECEIVABLE CATEGORY^430.2I^44^43\"",
                                     "^PRCA(430.2,39,0)=\"NURSING HOME CARE-LTC^NL^0^1319^^P^46^2^1^1^1^1^2^30,40,55,80\"")
     print output
-    
+    "Test".startswith(prefix)
