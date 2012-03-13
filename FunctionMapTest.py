@@ -143,6 +143,10 @@ if __name__ == '__main__':
     testNameValueRegEx(14, '''   ^RC("PRC ABJ"        RCCPCBAK+15''')
     testLongNameRegularExp('''   ZTSAVE("PRCAIO" ''')
     print ("Test"[0:2])
+    line ='''>> ^XTMP("MAGEVALSTUDY"RULES+36,RULES+90*'''
+    print ("Prefix: [%s]" % line[0:3])
+    print ("Name: [%s]" % line[3:23])
+    print ("Value: [%s]" % line[23:])
 
     
 
