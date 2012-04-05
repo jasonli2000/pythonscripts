@@ -1,5 +1,6 @@
 import os
 import subprocess
+import sys
 
 def testGetGitLastRev(GitRepoDir, gitPath):
     gitCommand = gitPath + "git rev-parse --verify HEAD"
@@ -9,4 +10,7 @@ def testGetGitLastRev(GitRepoDir, gitPath):
     print result.strip()
 
 
-testGetGitLastRev("/home/jasonli/git/VistA-FOIA/", "/usr/bin/")
+gitRepo = sys.argv[1]
+gitPath = sys.argv[2]
+
+testGetGitLastRev(gitRepo, gitPath)
