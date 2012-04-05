@@ -3,7 +3,7 @@ import subprocess
 import sys
 
 def testGetGitLastRev(GitRepoDir, gitPath):
-    gitCommand = gitPath + "git rev-parse --verify HEAD"
+    gitCommand = os.path.join(gitPath,"git") + " rev-parse --verify HEAD"
     print ("git Command is %s" % gitCommand)
     os.chdir(GitRepoDir)
     result = subprocess.check_output(gitCommand, shell=True)
